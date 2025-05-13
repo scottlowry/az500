@@ -3,13 +3,13 @@ Ref: http://rb.gy/b2fonv
 #>
 
 # create a resource group
-New-AzResourceGroup -ResourceGroupName myResourceGroup -Location EastUS
+New-AzResourceGroup -ResourceGroupName myResourceGroup -Location westus2
 
 # create a virtual network
 
 $virtualNetwork1 = New-AzVirtualNetwork `
   -ResourceGroupName myResourceGroup `
-  -Location EastUS `
+  -Location westus2 `
   -Name myVirtualNetwork1 `
   -AddressPrefix 10.0.0.0/16
 
@@ -25,7 +25,7 @@ $virtualNetwork1 | Set-AzVirtualNetwork
 # Create a second VNet
 $virtualNetwork2 = New-AzVirtualNetwork `
   -ResourceGroupName myResourceGroup `
-  -Location EastUS `
+  -Location westus2 `
   -Name myVirtualNetwork2 `
   -AddressPrefix 10.1.0.0/16
 

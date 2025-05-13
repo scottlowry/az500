@@ -181,7 +181,7 @@
                         {
                             "name": "nic1",
                             "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/networkInterfaces/nic1",
-                            "location": "eastus",
+                            "location": "westus2",
                             "properties": {
                                 "provisioningState": "Succeeded",
                                 "resourceGuid": "1019c06c-bad0-4053-bca9-39207811f919",
@@ -251,7 +251,7 @@
                         {
                             "name": "nic2",
                             "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/networkInterfaces/nic2",
-                            "location": "eastus",
+                            "location": "westus2",
                             "properties": {
                                 "provisioningState": "Succeeded",
                                 "resourceGuid": "60f8ad7f-c1b1-4b06-9cec-c441eac145a8",

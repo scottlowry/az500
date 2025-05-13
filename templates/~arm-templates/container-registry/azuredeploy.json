@@ -13,7 +13,7 @@
             "type": "Microsoft.ContainerRegistry/registries",
             "apiVersion": "2020-11-01-preview",
             "name": "[parameters('registries_twaz304acr_name')]",
-            "location": "eastus",
+            "location": "westus2",
             "tags": {
                 "class": "az304"
             },

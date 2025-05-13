@@ -30,7 +30,7 @@ Publish-AzBlueprint -Bluerpint $bp -Version 1.0
 $publishedBp = Get-AzBlueprint -ManagementGroupId "DevMG" -Name "Boilerplate" -LatestPublished
 
 # Each resource group artifact in the blueprint will need a hashtable for the actual RG name and location
-$rgHash = @{ name = "MyBoilerplateRG"; location = "eastus" }
+$rgHash = @{ name = "MyBoilerplateRG"; location = "westus2" }
 
 # all other (non-rg) parameters are listed in a single hashtable, with a key/value pair for each parameter
 $parameters = @{ principalIds = "caeebed6-cfa8-45ff-9d8a-03dba4ef9a7d" }
@@ -40,4 +40,4 @@ $parameters = @{ principalIds = "caeebed6-cfa8-45ff-9d8a-03dba4ef9a7d" }
 $rgArray = @{ SingleRG = $rgHash }
 
 # Assign the new blueprint to the specified subscription (Assignment updates should use Set-AzBlueprintAssignment
-New-AzBlueprintAssignment -Blueprint $publishedBp -Location eastus -SubscriptionId "00000000-1111-0000-1111-000000000000" -ResourceGroupParameter $rgArray -Parameter $parameters
+New-AzBlueprintAssignment -Blueprint $publishedBp -Location westus2 -SubscriptionId "00000000-1111-0000-1111-000000000000" -ResourceGroupParameter $rgArray -Parameter $parameters

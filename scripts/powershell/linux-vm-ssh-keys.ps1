@@ -18,7 +18,7 @@ $subnetConfig = New-AzVirtualNetworkSubnetConfig `
 # Create a virtual network
 $vnet = New-AzVirtualNetwork `
     -ResourceGroupName "myResourceGroup" `
-    -Location "EastUS" `
+    -Location "westus2" `
     -Name "myVNET" `
     -AddressPrefix 192.168.0.0/16 `
     -Subnet $subnetConfig
@@ -26,7 +26,7 @@ $vnet = New-AzVirtualNetwork `
 # Create a public IP address and specify a DNS name
 $pip = New-AzPublicIpAddress `
     -ResourceGroupName "myResourceGroup" `
-    -Location "EastUS" `
+    -Location "westus2" `
     -AllocationMethod Static `
     -IdleTimeoutInMinutes 4 `
     -Name "mypublicdns$(Get-Random)"
@@ -58,7 +58,7 @@ $nsgRuleWeb = New-AzNetworkSecurityRuleConfig `
 # Create a network security group
 $nsg = New-AzNetworkSecurityGroup `
     -ResourceGroupName "myResourceGroup" `
-    -Location "EastUS" `
+    -Location "westus2" `
     -Name "myNetworkSecurityGroup" `
     -SecurityRules $nsgRuleSSH, $nsgRuleWeb
 
@@ -66,7 +66,7 @@ $nsg = New-AzNetworkSecurityGroup `
 $nic = New-AzNetworkInterface `
     -Name "myNic" `
     -ResourceGroupName "myResourceGroup" `
-    -Location "EastUS" `
+    -Location "westus2" `
     -SubnetId $vnet.Subnets[0].Id `
     -PublicIpAddressId $pip.Id `
     -NetworkSecurityGroupId $nsg.Id
@@ -101,7 +101,7 @@ Add-AzVMSshPublicKey `
 
 New-AzVM `
     -ResourceGroupName "myResourceGroup" `
-    -Location eastus -VM $vmConfig
+    -Location westus2 -VM $vmConfig
 
 # Connect to the VM
 Get-AzPublicIpAddress -ResourceGroupName "myResourceGroup" | Select "IpAddress"

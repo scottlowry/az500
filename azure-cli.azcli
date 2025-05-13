@@ -4,7 +4,7 @@
 
 # Set variables
 RG_NAME="SecurityAuditRG"
-LOCATION="eastus"
+LOCATION="westus2"
 STORAGE_ACCOUNT="securityauditsa$RANDOM"
 KEYVAULT_NAME="security-kv-$RANDOM"
 NSG_NAME="security-nsg"

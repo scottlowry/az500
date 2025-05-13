@@ -1,5 +1,5 @@
 # create the ASGs
-$webAsg = New-AzApplicationSecurityGroup -ResourceGroupName 'Load-Balancer' -Name webASG -Location 'eastus2'
+$webAsg = New-AzApplicationSecurityGroup -ResourceGroupName 'Load-Balancer' -Name webASG -Location 'westus22'
 
 # Assign vNICs to ASG
 $webNic = Get-AzNetworkInterface -Name 'myNIC0' -ResourceGroupName 'Load-Balancer'

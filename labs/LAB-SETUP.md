@@ -76,10 +76,10 @@ Set-AzContext -Subscription "Your-Subscription-Name-or-ID"
 
 ```bash
 # Azure CLI
-az group create --name AZ500-Labs --location eastus2
+az group create --name AZ500-Labs --location westus22
 
 # PowerShell
-New-AzResourceGroup -Name AZ500-Labs -Location eastus2
+New-AzResourceGroup -Name AZ500-Labs -Location westus22
 ```
 
 ### 4. Enable Microsoft Defender for Cloud

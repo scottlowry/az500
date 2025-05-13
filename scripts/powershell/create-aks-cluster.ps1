@@ -1,7 +1,7 @@
 Ref 1: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough
 
 # Create resource group
-az group create --name aks --location eastus
+az group create --name aks --location westus2
 
 # Create cluster
 az aks create --resource-group aks --name oreillyAKS --node-count 1 --enable-addons monitoring --generate-ssh-keys

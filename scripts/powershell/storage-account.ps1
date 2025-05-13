@@ -13,7 +13,7 @@ $storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroup `
 # Create a storage account
 # Get list of locations and select one.
 Get-AzLocation | select Location
-$location = "eastus"
+$location = "westus2"
 
 # Create a new resource group.
 $resourceGroup = "teststoragerg"

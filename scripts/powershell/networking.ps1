@@ -3,7 +3,7 @@
 ###### CREATE NEW MULTI-TIER VNET ######
 # Variables for common values
 $rgName='MyResourceGroup'
-$location='eastus'
+$location='westus2'
 
 # Create user object
 $cred = Get-Credential -Message "Enter a username and password for the virtual machine."
@@ -105,7 +105,7 @@ Set-AzNetworkSecurityGroup -NetworkSecurityGroup $nsgb###### CREATE NEW
 ###### PIER TWO VNETS ######
 # Variables for common values
 $rgName = 'MyResourceGroup'
-$location = 'eastus'
+$location = 'westus2'
 
 # Create a resource group.
 New-AzResourceGroup -Name $rgName -Location $location

@@ -28,7 +28,7 @@
     },
     "resourceGroups": {
       "SingleRG": {
-        "location": "eastus",
+        "location": "westus2",
         "metadata": {
           "displayName": "VNET Resource Group"
         },

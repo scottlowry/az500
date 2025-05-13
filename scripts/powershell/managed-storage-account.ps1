@@ -2,7 +2,7 @@
 $prefix = "tlw704"
 
 #Basic variables
-$location = "eastus"
+$location = "westus2"
 $id = Get-Random -Minimum 1000 -Maximum 9999
 
 #Create a resource group for Key Vault

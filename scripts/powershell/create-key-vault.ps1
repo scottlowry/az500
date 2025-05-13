@@ -1,6 +1,6 @@
 Get-AzContext | Format-List
 
-New-AzResourceGroup -Name 'cs' -Location EastUS
+New-AzResourceGroup -Name 'cs' -Location westus2
 
 New-AzKeyVault -Name 'cs-vault' -ResourceGroupName 'cs' -Location 'East US'
 

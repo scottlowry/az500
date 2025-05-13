@@ -6,7 +6,7 @@
 # Set up environment
 Login-AzAccount
 
-New-AzResourceGroup -Name ContosoResourceGroup -Location EastUS
+New-AzResourceGroup -Name ContosoResourceGroup -Location westus2
 
 New-AzKeyVault -Name 'Contoso-Vault2' -ResourceGroupName 'ContosoResourceGroup' -Location 'East US'
 
